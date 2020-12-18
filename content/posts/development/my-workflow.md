@@ -4,7 +4,7 @@ author: irosyadi
 title:  My Workflow
 date: 2020-11-22 16:49:22
 category: development
-tags: ["css", "cheatsheet"]
+tags: ["workflow", "writing"]
 draft: false
 ---
 

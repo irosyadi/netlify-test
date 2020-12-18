@@ -4,7 +4,7 @@ author: irosyadi
 title:  Services on rosyadi.com
 date: 2020-12-13 04:17:16
 category: development
-tags: ["css", "cheatsheet"]
+tags: ["service", "self-hosted", "imron"]
 draft: false
 ---
 

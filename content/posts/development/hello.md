@@ -1,10 +1,12 @@
 ---
+layout: default
+author: irosyadi
 title: Hello World
 date: 2020-07-04 12:21:13
 category: development
 thumbnail: './images/hello.png'
+tags: ["gatsby"]
 draft: false
-tags: ["css", "cheatsheet"]
 ---
 
 # Hello World
