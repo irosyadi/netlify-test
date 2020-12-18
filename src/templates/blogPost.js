@@ -115,9 +115,9 @@ export default ({ data, pageContext, location }) => {
                     <img
                       css={tw`mr-2`}
                       src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
-                      alt="Buy me a coffee"
+                      alt="Buy me coffee"
                     />
-                    <span>Buy me a coffee</span>
+                    <span>Buy me coffee</span>
                   </a>
                 </div>
               )}
