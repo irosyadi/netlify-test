@@ -47,8 +47,6 @@ export default class HTML extends React.Component {
               <FaInfo css={tw`fill-current w-6 h-6 mr-2`} />
               <div css={tw`ml-2`}>
                 Please enable JavaScript to use this site.
-                <br />
-                JavaScript를 활성화 시켜주세요.
               </div>
             </div>
           </noscript>
