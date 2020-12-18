@@ -147,7 +147,7 @@ const ShareButtons = ({ url, text }) => {
           `}
         >
           <FaInfo css={tw`fill-current mr-2`} />
-          <div css={tw`ml-2`}>링크가 복사 되었습니다.</div>
+          <div css={tw`ml-2`}>Copy Link to Clipboard</div>
         </div>
       )}
     </div>
