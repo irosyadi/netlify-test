@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[irosyadi]]></title><description><![CDATA[a desert traveller]]></description><link>https://idaysor.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Dec 2020 01:59:14 GMT</lastBuildDate><item><title><![CDATA[Services on rosyadi.com]]></title><description><![CDATA[Services on rosyadi.com Personal Services Dashboard : access all personal sites in rosyadi.com Organizer : Homelab services organizer…]]></description><link>https://idaysor.netlify.app/development/rosyadi-com/</link><guid isPermaLink="false">https://idaysor.netlify.app/development/rosyadi-com/</guid><pubDate>Sun, 13 Dec 2020 04:17:16 GMT</pubDate><content:encoded>&lt;h1 id=&quot;services-on-rosyadicom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#services-on-rosyadicom&quot; aria-label=&quot;services on rosyadicom permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Services on rosyadi.com&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[irosyadi]]></title><description><![CDATA[a desert traveller]]></description><link>https://idaysor.netlify.app</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 18 Dec 2020 02:18:02 GMT</lastBuildDate><item><title><![CDATA[Services on rosyadi.com]]></title><description><![CDATA[Services on rosyadi.com Personal Services Dashboard : access all personal sites in rosyadi.com Organizer : Homelab services organizer…]]></description><link>https://idaysor.netlify.app/development/rosyadi-com/</link><guid isPermaLink="false">https://idaysor.netlify.app/development/rosyadi-com/</guid><pubDate>Sun, 13 Dec 2020 04:17:16 GMT</pubDate><content:encoded>&lt;h1 id=&quot;services-on-rosyadicom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#services-on-rosyadicom&quot; aria-label=&quot;services on rosyadicom permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Services on rosyadi.com&lt;/h1&gt;
 &lt;h2 id=&quot;personal-services&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#personal-services&quot; aria-label=&quot;personal services permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Personal Services&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://rosyadi.com/dash/&quot;&gt;Dashboard&lt;/a&gt; : access all personal sites in rosyadi.com&lt;/li&gt;
@@ -1238,6 +1238,148 @@ The sun is molten gold&lt;details&gt;&lt;summary&gt;2&lt;/summary&gt; it is not,
     background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
     box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
   }
+&lt;/style&gt;</content:encoded></item><item><title><![CDATA[Experimental Markdown]]></title><description><![CDATA[Experimental Markdown Experimental markdown to check Markdown parser compatibility between VNote+Viki, Gatsby-starter-bee, and Gitbook…]]></description><link>https://idaysor.netlify.app/development/experimental-markdown/</link><guid isPermaLink="false">https://idaysor.netlify.app/development/experimental-markdown/</guid><pubDate>Thu, 26 Nov 2020 21:10:40 GMT</pubDate><content:encoded>&lt;h1 id=&quot;experimental-markdown&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#experimental-markdown&quot; aria-label=&quot;experimental markdown permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Experimental Markdown&lt;/h1&gt;
+&lt;p&gt;Experimental markdown to check Markdown parser compatibility between VNote+Viki, Gatsby-starter-bee, and Gitbook.&lt;/p&gt;
+&lt;h2 id=&quot;comment&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#comment&quot; aria-label=&quot;comment permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Comment&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;&amp;#x3C;!-- Write your comments here --&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Here is the comment:  &lt;/p&gt;
+&lt;!-- Write your comments here --&gt;
+&lt;h2 id=&quot;symbol-list&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#symbol-list&quot; aria-label=&quot;symbol list permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Symbol List&lt;/h2&gt;
+&lt;p&gt;💬 speech&lt;br&gt;
+🌏️ globe&lt;br&gt;
+⭐️ star&lt;br&gt;
+🚀 rocket&lt;br&gt;
+👣 footprints&lt;br&gt;
+⚓️ anchor&lt;br&gt;
+🔥 fire&lt;br&gt;
+🎯 target&lt;br&gt;
+📌 pin&lt;br&gt;
+⛔ stop&lt;br&gt;
+‼️ double warning&lt;br&gt;
+❗️ warning
+⁉️ question&lt;br&gt;
+✔️☑️ check mark&lt;br&gt;
+❌ cross&lt;br&gt;
+ℹ️ info&lt;br&gt;
+📧 email&lt;br&gt;
+🌐 web&lt;br&gt;
+▶▷ triangle&lt;br&gt;
+⚠️ warning&lt;br&gt;
+💥 danger&lt;br&gt;
+📝 note&lt;br&gt;
+☝️ remember&lt;br&gt;
+⚡️ flash&lt;/p&gt;
+&lt;h2 id=&quot;iframe&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#iframe&quot; aria-label=&quot;iframe permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Iframe&lt;/h2&gt;
+&lt;pre class=&quot;grvsc-container one-dark-pro&quot; data-language=&quot;&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&amp;lt;iframe src=&amp;quot;https://docs.google.com/presentation/d/e/2PACX-1vSfP28laIeF0CUrqvfDKBCQp8vp-SHgHpouZ5O7xVREVK0ky7WiGuGdmsJRS13caF9Fh3y3fuAzvFlM/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&amp;quot; frameborder=&amp;quot;0&amp;quot; width=&amp;quot;480&amp;quot; height=&amp;quot;299&amp;quot; allowfullscreen=&amp;quot;true&amp;quot; mozallowfullscreen=&amp;quot;true&amp;quot; webkitallowfullscreen=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/e/2PACX-1vSfP28laIeF0CUrqvfDKBCQp8vp-SHgHpouZ5O7xVREVK0ky7WiGuGdmsJRS13caF9Fh3y3fuAzvFlM/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;480&quot; height=&quot;299&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+&lt;h2 id=&quot;internal-reference&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#internal-reference&quot; aria-label=&quot;internal reference permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Internal Reference&lt;/h2&gt;
+&lt;p&gt;Content of the up folder (&lt;code&gt;[Hello](../development/hello.md)&lt;/code&gt;) : (working on jekyll-rtd and gitbook)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/dbafb100551be328b88615688c239d7f/hello.md&quot;&gt;Hello&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;../blog/readme.md&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Content of the up folder (&lt;code&gt;[Hello](../development/hello)&lt;/code&gt;) : check&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;../development/hello&quot;&gt;Hello&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;../blog/readme&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;style class=&quot;grvsc-styles&quot;&gt;
+  .grvsc-container {
+    overflow: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1rem;
+    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
+    padding-bottom: 1rem;
+    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
+    border-radius: 8px;
+    border-radius: var(--grvsc-border-radius, 8px);
+    font-feature-settings: normal;
+    line-height: 1.4;
+  }
+  
+  .grvsc-code {
+    display: table;
+  }
+  
+  .grvsc-line {
+    display: table-row;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .grvsc-line &gt; * {
+    position: relative;
+  }
+  
+  .grvsc-gutter-pad {
+    display: table-cell;
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  .grvsc-gutter {
+    display: table-cell;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter::before {
+    content: attr(data-content);
+  }
+  
+  .grvsc-source {
+    display: table-cell;
+    padding-left: 1.5rem;
+    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
+    padding-right: 1.5rem;
+    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
+  }
+  
+  .grvsc-source:empty::after {
+    content: &apos; &apos;;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .grvsc-gutter + .grvsc-source {
+    padding-left: 0.75rem;
+    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
+  }
+  
+  /* Line transformer styles */
+  
+  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
+    content: &apos; &apos;;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .grvsc-line-diff-add::before {
+    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
+  }
+  
+  .grvsc-line-diff-del::before {
+    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
+  }
+  
+  .grvsc-line-number {
+    padding: 0 2px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  
+  .one-dark-pro {
+    background-color: #282c34;
+    color: #abb2bf;
+  }
+  .one-dark-pro .grvsc-line-highlighted::before {
+    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
+    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
+  }
 &lt;/style&gt;</content:encoded></item><item><title><![CDATA[Markdown for This Blog]]></title><description><![CDATA[Markdown for This Blog Common markdown format for Gitbook, gatsby-starter-bee, and VNote. 1. h2 Heading markdown display h3 Heading h…]]></description><link>https://idaysor.netlify.app/development/blog-markdown/</link><guid isPermaLink="false">https://idaysor.netlify.app/development/blog-markdown/</guid><pubDate>Thu, 26 Nov 2020 21:10:40 GMT</pubDate><content:encoded>&lt;h1 id=&quot;markdown-for-this-blog&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#markdown-for-this-blog&quot; aria-label=&quot;markdown for this blog permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Markdown for This Blog&lt;/h1&gt;
 &lt;p&gt;Common markdown format for Gitbook, gatsby-starter-bee, and VNote.&lt;/p&gt;
 &lt;h2 id=&quot;1-h2-heading&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-h2-heading&quot; aria-label=&quot;1 h2 heading permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. h2 Heading&lt;/h2&gt;
@@ -2010,149 +2152,7 @@ Inline equation with one dollar sign: $$E=mc^2$$ (worked in Gatsby and Gitbook).
 &lt;a href=&quot;#fnref-withcode&quot; class=&quot;footnote-backref&quot;&gt;↩&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Experimental Markdown]]></title><description><![CDATA[Experimental Markdown Experimental markdown to check Markdown parser compatibility between VNote+Viki, Gatsby-starter-bee, and Gitbook…]]></description><link>https://idaysor.netlify.app/development/experimental-markdown/</link><guid isPermaLink="false">https://idaysor.netlify.app/development/experimental-markdown/</guid><pubDate>Thu, 26 Nov 2020 21:10:40 GMT</pubDate><content:encoded>&lt;h1 id=&quot;experimental-markdown&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#experimental-markdown&quot; aria-label=&quot;experimental markdown permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Experimental Markdown&lt;/h1&gt;
-&lt;p&gt;Experimental markdown to check Markdown parser compatibility between VNote+Viki, Gatsby-starter-bee, and Gitbook.&lt;/p&gt;
-&lt;h2 id=&quot;comment&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#comment&quot; aria-label=&quot;comment permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Comment&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;&amp;#x3C;!-- Write your comments here --&gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Here is the comment:  &lt;/p&gt;
-&lt;!-- Write your comments here --&gt;
-&lt;h2 id=&quot;symbol-list&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#symbol-list&quot; aria-label=&quot;symbol list permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Symbol List&lt;/h2&gt;
-&lt;p&gt;💬 speech&lt;br&gt;
-🌏️ globe&lt;br&gt;
-⭐️ star&lt;br&gt;
-🚀 rocket&lt;br&gt;
-👣 footprints&lt;br&gt;
-⚓️ anchor&lt;br&gt;
-🔥 fire&lt;br&gt;
-🎯 target&lt;br&gt;
-📌 pin&lt;br&gt;
-⛔ stop&lt;br&gt;
-‼️ double warning&lt;br&gt;
-❗️ warning
-⁉️ question&lt;br&gt;
-✔️☑️ check mark&lt;br&gt;
-❌ cross&lt;br&gt;
-ℹ️ info&lt;br&gt;
-📧 email&lt;br&gt;
-🌐 web&lt;br&gt;
-▶▷ triangle&lt;br&gt;
-⚠️ warning&lt;br&gt;
-💥 danger&lt;br&gt;
-📝 note&lt;br&gt;
-☝️ remember&lt;br&gt;
-⚡️ flash&lt;/p&gt;
-&lt;h2 id=&quot;iframe&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#iframe&quot; aria-label=&quot;iframe permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Iframe&lt;/h2&gt;
-&lt;pre class=&quot;grvsc-container one-dark-pro&quot; data-language=&quot;&quot; data-index=&quot;0&quot;&gt;&lt;code class=&quot;grvsc-code&quot;&gt;&lt;span class=&quot;grvsc-line&quot;&gt;&lt;span class=&quot;grvsc-source&quot;&gt;&amp;lt;iframe src=&amp;quot;https://docs.google.com/presentation/d/e/2PACX-1vSfP28laIeF0CUrqvfDKBCQp8vp-SHgHpouZ5O7xVREVK0ky7WiGuGdmsJRS13caF9Fh3y3fuAzvFlM/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000&amp;quot; frameborder=&amp;quot;0&amp;quot; width=&amp;quot;480&amp;quot; height=&amp;quot;299&amp;quot; allowfullscreen=&amp;quot;true&amp;quot; mozallowfullscreen=&amp;quot;true&amp;quot; webkitallowfullscreen=&amp;quot;true&amp;quot;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;iframe src=&quot;https://docs.google.com/presentation/d/e/2PACX-1vSfP28laIeF0CUrqvfDKBCQp8vp-SHgHpouZ5O7xVREVK0ky7WiGuGdmsJRS13caF9Fh3y3fuAzvFlM/embed?start=false&amp;loop=false&amp;delayms=3000&quot; frameborder=&quot;0&quot; width=&quot;480&quot; height=&quot;299&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
-&lt;h2 id=&quot;internal-reference&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#internal-reference&quot; aria-label=&quot;internal reference permalink&quot; class=&quot;toc-header before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Internal Reference&lt;/h2&gt;
-&lt;p&gt;Content of the up folder (&lt;code&gt;[Hello](../development/hello.md)&lt;/code&gt;) : (working on jekyll-rtd and gitbook)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/dbafb100551be328b88615688c239d7f/hello.md&quot;&gt;Hello&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../blog/readme.md&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Content of the up folder (&lt;code&gt;[Hello](../development/hello)&lt;/code&gt;) : check&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;../development/hello&quot;&gt;Hello&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;../blog/readme&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;style class=&quot;grvsc-styles&quot;&gt;
-  .grvsc-container {
-    overflow: auto;
-    position: relative;
-    -webkit-overflow-scrolling: touch;
-    padding-top: 1rem;
-    padding-top: var(--grvsc-padding-top, var(--grvsc-padding-v, 1rem));
-    padding-bottom: 1rem;
-    padding-bottom: var(--grvsc-padding-bottom, var(--grvsc-padding-v, 1rem));
-    border-radius: 8px;
-    border-radius: var(--grvsc-border-radius, 8px);
-    font-feature-settings: normal;
-    line-height: 1.4;
-  }
-  
-  .grvsc-code {
-    display: table;
-  }
-  
-  .grvsc-line {
-    display: table-row;
-    box-sizing: border-box;
-    width: 100%;
-    position: relative;
-  }
-  
-  .grvsc-line &gt; * {
-    position: relative;
-  }
-  
-  .grvsc-gutter-pad {
-    display: table-cell;
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  .grvsc-gutter {
-    display: table-cell;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter::before {
-    content: attr(data-content);
-  }
-  
-  .grvsc-source {
-    display: table-cell;
-    padding-left: 1.5rem;
-    padding-left: var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem));
-    padding-right: 1.5rem;
-    padding-right: var(--grvsc-padding-right, var(--grvsc-padding-h, 1.5rem));
-  }
-  
-  .grvsc-source:empty::after {
-    content: &apos; &apos;;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
-  .grvsc-gutter + .grvsc-source {
-    padding-left: 0.75rem;
-    padding-left: calc(var(--grvsc-padding-left, var(--grvsc-padding-h, 1.5rem)) / 2);
-  }
-  
-  /* Line transformer styles */
-  
-  .grvsc-has-line-highlighting &gt; .grvsc-code &gt; .grvsc-line::before {
-    content: &apos; &apos;;
-    position: absolute;
-    width: 100%;
-  }
-  
-  .grvsc-line-diff-add::before {
-    background-color: var(--grvsc-line-diff-add-background-color, rgba(0, 255, 60, 0.2));
-  }
-  
-  .grvsc-line-diff-del::before {
-    background-color: var(--grvsc-line-diff-del-background-color, rgba(255, 0, 20, 0.2));
-  }
-  
-  .grvsc-line-number {
-    padding: 0 2px;
-    text-align: right;
-    opacity: 0.7;
-  }
-  
-  .one-dark-pro {
-    background-color: #282c34;
-    color: #abb2bf;
-  }
-  .one-dark-pro .grvsc-line-highlighted::before {
-    background-color: var(--grvsc-line-highlighted-background-color, rgba(255, 255, 255, 0.1));
-    box-shadow: inset var(--grvsc-line-highlighted-border-width, 4px) 0 0 0 var(--grvsc-line-highlighted-border-color, rgba(255, 255, 255, 0.5));
-  }
-&lt;/style&gt;</content:encoded></item><item><title><![CDATA[[42Seoul] ft_printf 프로젝트 기록.]]></title><description><![CDATA[🚧 프로젝트 진행 기간 2020.10.05 ~ 2020.11.19 ft_printf-score 이번에 ft_printf 프로젝트를 진행하면서 어떤 형태로 고민을 하고 해결을 하였는 지에 대해 기록을 하고자 작성을 해본다. ✈️ 프로젝트 시작 ft…]]></description><link>https://idaysor.netlify.app/C/42Seoul-ft_printf-프로젝트-기록/</link><guid isPermaLink="false">https://idaysor.netlify.app/C/42Seoul-ft_printf-프로젝트-기록/</guid><pubDate>Tue, 24 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[42Seoul] ft_printf 프로젝트 기록.]]></title><description><![CDATA[🚧 프로젝트 진행 기간 2020.10.05 ~ 2020.11.19 ft_printf-score 이번에 ft_printf 프로젝트를 진행하면서 어떤 형태로 고민을 하고 해결을 하였는 지에 대해 기록을 하고자 작성을 해본다. ✈️ 프로젝트 시작 ft…]]></description><link>https://idaysor.netlify.app/C/42Seoul-ft_printf-프로젝트-기록/</link><guid isPermaLink="false">https://idaysor.netlify.app/C/42Seoul-ft_printf-프로젝트-기록/</guid><pubDate>Tue, 24 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;🚧 프로젝트 진행 기간 2020.10.05 ~ 2020.11.19&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://badge42.herokuapp.com/api/project/jaeskim/ft_printf&quot; alt=&quot;ft_printf-score&quot;&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
