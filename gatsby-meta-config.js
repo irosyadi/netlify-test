@@ -3,7 +3,7 @@ module.exports = {
   description: `a desert traveller`,
   author: `irosyadi`,
   introduction: `notes of a life`,
-  siteUrl: `https://jaeseokim.github.io/`, // Your blog site url
+  siteUrl: `https://idaysor.netlify.app/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `irosyadi`, // Your GitHub account
@@ -25,6 +25,6 @@ module.exports = {
   share: {
     facebookAppId: "", // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: "", // Add your google analytics tranking ID
+  ga: "UA-12345678", // Add your google analytics tranking ID
   // jennifer_front_id: "ed243e67", // Add your jennifer front tranking ID
 }
