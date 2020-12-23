@@ -1,31 +1,28 @@
+const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const slug = require("slug")
 
-exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
-  // Hack due to Tailwind ^1.1.0 using `reduce-css-calc` which assumes node
-  // https://github.com/bradlc/babel-plugin-tailwind-components/issues/39#issuecomment-526892633
-  const config = getConfig()
-  config.node = {
-    fs: "empty",
-  }
-}
-
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPostTemplate = require.resolve(`./src/templates/blogPost.js`)
-  const categoryTemplate = require.resolve(`./src/templates/category.js`)
-
-  return graphql(
+  const articlePage = require.resolve(`./src/templates/article.js`)
+  const collectionPage = require.resolve(`./src/templates/collection.js`)
+  const result = await graphql(
     `
       {
-        postsRemark: allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          filter: { frontmatter: { draft: { eq: false } } }
-        ) {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
           edges {
             node {
+              id
               fields {
                 slug
+              }
+              parent {
+                id
+                ... on File {
+                  name
+                  sourceInstanceName
+                }
               }
               frontmatter {
                 title
@@ -33,64 +30,184 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
-        categories: allDirectory(
-          filter: { absolutePath: { regex: "/^((?!image).)*$/" } }
-        ) {
-          nodes {
-            relativePath
+        allCollectionsYaml {
+          edges {
+            node {
+              id
+              title
+              fields {
+                slug
+              }
+            }
           }
-          totalCount
         }
       }
     `
-  ).then((result) => {
-    if (result.errors) {
-      throw result.errors
-    }
+  )
 
-    const posts = result.data.postsRemark.edges
+  if (result.errors) {
+    throw result.errors
+  }
 
-    posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node
-      const next = index === 0 ? null : posts[index - 1].node
+  // Create article and collection pages.
+  const items = result.data.allMarkdownRemark.edges
+  const articles = items.filter(
+    (item) => item.node.parent.sourceInstanceName === "articles"
+  )
+  const collections = result.data.allCollectionsYaml.edges
 
-      createPage({
-        path: post.node.fields.slug,
-        component: blogPostTemplate,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
-      })
+  articles.forEach((post, index) => {
+    const slug = post.node.fields.slug
+
+    createPage({
+      path: slug,
+      component: articlePage,
+      context: {
+        slug,
+      },
     })
+  })
 
-    const categories = result.data.categories.nodes
-
-    categories.forEach((category) => {
-      if (category.relativePath !== "") {
-        createPage({
-          path: `/${category.relativePath}/`,
-          component: categoryTemplate,
-          context: {
-            categoryRegex: `/^(${__dirname}\/content\/posts\/)(${category.relativePath}\/)([^\/]*\.md$)/`,
-          },
-        })
-      }
+  collections.forEach(({ node }, index) => {
+    createPage({
+      path: node.fields.slug,
+      component: collectionPage,
+      context: {
+        slug: node.fields.slug,
+        collectionId: node.id,
+      },
     })
   })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const fileNode = getNode(node.parent)
+    const sourceInstanceName = fileNode.sourceInstanceName
 
-    createNodeField({
+    // creates slugs like
+    //  /articles/some-heading
+    const value =
+      "articles" === sourceInstanceName
+        ? "/" + sourceInstanceName + createFilePath({ node, getNode })
+        : createFilePath({ node, getNode })
+
+    actions.createNodeField({
       name: `slug`,
       node,
       value,
     })
+  } else if (node.internal.type === `CollectionsYaml`) {
+    // creates slugs like
+    //  /collections/some-collection-name
+    actions.createNodeField({
+      name: `slug`,
+      node,
+      value: "/collections/" + slug(node.id),
+    })
   }
+}
+
+// Checks whether "articles" containts the article located at "articlePath".
+// "articlePath" must be an absolute url.
+function articlesContainSpecificArticle(articles, articlePath) {
+  return (
+    Array.isArray(articles) &&
+    articles.some(
+      // compare articles by absolute file path
+      (article) => path.resolve("data", article.file) === articlePath
+    )
+  )
+}
+
+exports.createSchemaCustomization = ({ actions, schema }) => {
+  const typeDefs = [
+    "type MarkdownRemark implements Node { fields: MarkdownRemarkFields }",
+    schema.buildObjectType({
+      name: "MarkdownRemarkFields",
+      fields: {
+        collection: {
+          type: "CollectionsYaml",
+          resolve: (source, args, context, info) => {
+            // determine the collection of the article based on the file path
+            const rootNode = context.nodeModel.findRootNodeAncestor(source)
+            const collection = context.nodeModel
+              .getAllNodes({ type: "CollectionsYaml" })
+              .find((collection) => {
+                // check fixed articles
+                if (
+                  articlesContainSpecificArticle(
+                    collection.articles,
+                    rootNode.absolutePath
+                  )
+                )
+                  return true
+
+                // check articles of sections
+                if (
+                  Array.isArray(collection.sections) &&
+                  collection.sections.some((section) => {
+                    return articlesContainSpecificArticle(
+                      section.articles,
+                      rootNode.absolutePath
+                    )
+                  })
+                )
+                  return true
+
+                return false
+              })
+            //
+            return collection
+          },
+        },
+        section: {
+          type: "CollectionsYamlSections",
+          resolve: (source, args, context, info) => {
+            const rootNode = context.nodeModel.findRootNodeAncestor(source)
+            // determine the section of the article based on the file path
+            const sections = context.nodeModel
+              .getAllNodes({ type: "CollectionsYaml" })
+              .filter((collection) => Array.isArray(collection.sections))
+              .flatMap((collection) => collection.sections)
+
+            return sections.find((section) =>
+              articlesContainSpecificArticle(
+                section.articles,
+                rootNode.absolutePath
+              )
+            )
+          },
+        },
+      },
+    }),
+    // hard-code collection types to avoid errors when collections don't use all
+    // features
+    `
+      type CollectionsYaml implements Node {
+        sections: [CollectionsYamlSections]
+        articles: [CollectionsYamlArticles]
+      }
+      type CollectionsYamlArticles implements Node @infer {
+        file: File @fileByRelativePath
+      }
+      type CollectionsYamlSections implements Node {
+        id: String!
+        title: String!
+        articles: [CollectionsYamlSectionsArticles]
+      }
+      type CollectionsYamlSectionsArticles implements Node @infer {
+        file: File @fileByRelativePath
+      }
+    `,
+    // hard-code article frontmatter types to avoid erros when articles don't
+    // use all features
+    `
+      type MarkdownRemarkFrontmatter implements Node {
+        date: Date @dateformat
+        modifiedDate: Date @dateformat
+      }
+    `,
+  ]
+  actions.createTypes(typeDefs)
 }

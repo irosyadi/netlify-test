@@ -1,126 +1,193 @@
-import tw from "twin.macro"
-import React, { useMemo, useState, useEffect, useCallback, useRef } from "react"
+/** @jsx jsx */
+import { jsx } from "theme-ui"
+import React from "react"
+import { Link, graphql } from "gatsby"
+
+import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Profile from "../components/Profile"
-import Post from "../components/Post"
-import Layout from "../components/Layout"
-import { graphql, navigate } from "gatsby"
-import queryString from "query-string"
-import TagSelector from "../components/TagSelector"
-import useInfiniteScroll from "../lib/hooks/useInfiniteScroll"
-import useCount from "../lib/hooks/useCount"
-import CategoryMenu from "../components/CategoryMenu"
+import * as icons from "../utils/icons"
 
-const Wrapper = tw.div`w-full max-w-screen-md mx-auto`
-
-export default ({ data, location }) => {
-  const posts = data.allMarkdownRemark.edges
-  const { countOfInitialPost } = data.site.siteMetadata.configs
-  const [count, countRef, increaseCount] = useCount("index")
-  const bottomRef = useRef()
-
-  const [state, setState] = useState({
-    tag: "ALL",
-    filteredPosts: posts,
-  })
-
-  const tags = useMemo(() => {
-    var result = []
-    posts.map(({ node }) => (result = [...result, ...node.frontmatter.tags]))
-    for (var i = 0; i < result.length; ++i) {
-      for (var j = i + 1; j < result.length; ++j) {
-        if (result[i] === result[j]) result.splice(j--, 1)
-      }
-    }
-    return result
-  }, [posts])
-
-  const setFilteredPosts = useCallback(
-    (tag) => {
-      if (tag === undefined) tag = state.tag
-      if (tag === "ALL") {
-        setState({
-          tag: tag,
-          filteredPosts: posts,
-        })
-      } else {
-        setState({
-          tag: tag,
-          filteredPosts: posts.filter((post) =>
-            post.node.frontmatter.tags.includes(tag)
-          ),
-        })
-      }
-    },
-    [posts, state.tag]
-  )
-
-  useInfiniteScroll(() => {
-    if (posts.length > countRef.current * countOfInitialPost) {
-      increaseCount()
-      setFilteredPosts()
-    }
-  }, bottomRef)
-
-  const onTagClick = (tag) => {
-    navigate(`?tag=${tag}`)
-    setFilteredPosts(tag)
-  }
-
-  useEffect(() => {
-    if (location.href) {
-      const {
-        query: { tag },
-      } = queryString.parseUrl(location.href)
-      if (tag) {
-        setFilteredPosts(tag)
-      }
-    }
-  }, [location.href, setFilteredPosts])
-
-  return (
-    <Layout>
-      <SEO title="Home" />
-      <Wrapper>
-        <Profile />
-      </Wrapper>
-      <CategoryMenu />
-      <Wrapper>
-        <TagSelector tags={tags} onTagClick={onTagClick} state={state} />
-        {state.filteredPosts
-          .slice(0, count * countOfInitialPost)
-          .map((post, index) => {
-            return <Post post={post} key={`post_${index}`} />
-          })}
-      </Wrapper>
-      <div ref={bottomRef} />
-    </Layout>
-  )
+function concatArticles(node) {
+  return [
+    ...(Array.isArray(node.articles) ? node.articles : []),
+    ...(Array.isArray(node.sections)
+      ? node.sections.flatMap((section) =>
+          Array.isArray(section.articles) ? section.articles : []
+        )
+      : []),
+  ]
 }
 
+class HelpCenterIndex extends React.Component {
+  render() {
+    return (
+      <Layout
+        location={this.props.location}
+        title={this.props.data.site.siteMetadata.title}
+        description={this.props.data.site.siteMetadata.description}
+      >
+        <SEO title={this.props.data.site.siteMetadata.title} skipSuffix />
+        {this.props.data.collections.edges.map(({ node }, index) => {
+          const articlesOfCollection = concatArticles(node)
+
+          const icon = node.icon
+            ? jsx(
+                icons[node.icon],
+                { sx: { color: "iconColor" }, size: "2rem" },
+                null
+              )
+            : null
+
+          return (
+            <Link
+              key={node.id}
+              sx={{
+                boxShadow: `none`,
+                "&:hover": {
+                  textDecoration: "none",
+                },
+              }}
+              to={node.fields.slug}
+            >
+              <article
+                sx={{
+                  backgroundColor: "paperBackgroundColor",
+                  borderWidth: 1,
+                  borderStyle: "solid",
+                  borderColor: "paperBorderColor",
+                  borderRadius: 3,
+                  py: 4,
+                  px: 2,
+                  position: "relative",
+                  zIndex: "3",
+                  textDecoration: "none",
+                  overflow: "hidden",
+                  width: "100%",
+                  display: "flex",
+                  flexDirection: ["column", "row"],
+                  outline: "none",
+                  mt: index === 0 ? 5 : 0,
+                  mb:
+                    index === this.props.data.collections.edges.length - 1
+                      ? 5
+                      : 4,
+                  boxShadow: "0 3px 8px 0 rgba(0,0,0,0.03)",
+                  transition:
+                    "border .15s linear, transform .15s linear, background-color .15s linear, box-shadow .15s linear, opacity .15s linear, transform .15s linear, box-shadow .15s linear",
+                  color: "paperHeadingColor",
+                  "&:hover": {
+                    border: "1px solid rgba(136,149,162,0.2)",
+                    backgroundColor: "paperHoverBackgroundColor",
+                    color: "paperHoverHeadingColor",
+                  },
+                }}
+              >
+                <div
+                  sx={{
+                    flex: "1",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: ["flex-start", "center"],
+                    px: [2, 0],
+                    pb: [3, 0],
+                  }}
+                >
+                  {icon}
+                </div>
+                <div sx={{ flex: "6", px: [2, 0] }}>
+                  <header>
+                    <h3
+                      sx={{
+                        mt: 0,
+                        mb: 2,
+                        color: "inherit",
+                      }}
+                    >
+                      {node.title}
+                    </h3>
+                  </header>
+                  <section
+                    sx={{
+                      color: "paperDescriptionColor",
+                    }}
+                  >
+                    {node.description}
+                  </section>
+                  <small
+                    sx={{
+                      color: "paperDescriptionColor",
+                    }}
+                  >
+                    {articlesOfCollection.length}{" "}
+                    {(() => {
+                      switch (articlesOfCollection.length) {
+                        case 0:
+                          return this.props.data.site.siteMetadata.texts
+                            .articlesInCollectionZeroText
+                        case 1:
+                          return this.props.data.site.siteMetadata.texts
+                            .articlesInCollectionOneText
+                        case 2:
+                          return this.props.data.site.siteMetadata.texts
+                            .articlesInCollectionTwoText
+                        default:
+                          return this.props.data.site.siteMetadata.texts
+                            .articlesInCollectionMultipleText
+                      }
+                    })()}
+                  </small>
+                </div>
+              </article>
+            </Link>
+          )
+        })}
+      </Layout>
+    )
+  }
+}
+
+export default HelpCenterIndex
+
 export const pageQuery = graphql`
-  query PostsQuery {
+  fragment IndexArticleFragment on File {
+    childMarkdownRemark {
+      id
+    }
+  }
+  query {
     site {
       siteMetadata {
-        configs {
-          countOfInitialPost
+        title
+        description
+        texts {
+          articlesInCollectionZeroText
+          articlesInCollectionOneText
+          articlesInCollectionTwoText
+          articlesInCollectionMultipleText
         }
       }
     }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: { eq: false } } }
-    ) {
+    collections: allCollectionsYaml {
       edges {
         node {
-          excerpt(pruneLength: 200, truncate: true)
+          id
+          title
+          icon
+          description
+          articles {
+            file {
+              ...IndexArticleFragment
+            }
+          }
+          sections {
+            articles {
+              file {
+                ...IndexArticleFragment
+              }
+            }
+          }
           fields {
             slug
-          }
-          frontmatter {
-            date(formatString: "DD - MM - YYYY")
-            title
-            tags
           }
         }
       }

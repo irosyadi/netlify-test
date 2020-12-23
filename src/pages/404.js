@@ -1,33 +1,32 @@
-import React, { useContext } from "react"
-import tw, { css } from "twin.macro"
-import SEO from "../components/seo"
-import Layout from "../components/Layout"
-import { darkModeColor, whiteModeColor } from "../../them-color"
-import ThemeContext from "../lib/context/ThemContext"
+import React from "react"
+import { graphql } from "gatsby"
 
-export default () => {
-  const { isDarkMode } = useContext(ThemeContext)
-  return (
-    <Layout>
-      <SEO title="Page Not Found" />
-      <div
-        css={css`
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          padding: 1rem;
-          background-color: ${isDarkMode ? "#333" : "#eee"};
-          border-radius: 0.25rem;
-          border-left-width: 4px;
-          border-color: ${isDarkMode
-            ? darkModeColor.mainColor2
-            : whiteModeColor.mainColor2};
-        `}
-      >
-        <span css={tw`text-6xl text-red-400 font-bold`}>404</span>
-        <span css={tw`text-2xl font-semibold`}> : Page Not Found!</span>
-      </div>
-    </Layout>
-  )
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+class NotFoundPage extends React.Component {
+  render() {
+    const { data } = this.props
+    const siteTitle = data.site.siteMetadata.title
+
+    return (
+      <Layout location={this.props.location} title={siteTitle}>
+        <SEO title="404: Not Found" />
+        <h1>Not Found</h1>
+        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      </Layout>
+    )
+  }
 }
+
+export default NotFoundPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

@@ -1,24 +1,54 @@
-const metaConfig = require("./gatsby-meta-config")
-
 module.exports = {
-  siteMetadata: metaConfig,
+  siteMetadata: {
+    title: `Free Help Center`,
+    author: `Dominik Ferber`,
+    // You'd normally use a description like
+    // "Advice and answers by the MyCompany-Team"
+    description: `Get a free self-hosted Help Center like this one`,
+    siteUrl: `https://help.dferber.de/`,
+    language: "en",
+    texts: {
+      allCollectionsText: "All Collections",
+      searchPlaceholderText: "Search for answers…",
+      lastModifiedText: "Last edited",
+      publishedOnText: "Published on",
+      writtenByText: "Written by",
+      articlesInCollectionZeroText: "articles in this collection",
+      articlesInCollectionOneText: "article in this collection",
+      articlesInCollectionTwoText: "articles in this collection",
+      articlesInCollectionMultipleText: "articles in this collection",
+    },
+  },
+  mapping: {
+    "MarkdownRemark.frontmatter.author": `AuthorsYaml`,
+    "MarkdownRemark.frontmatter.collection": `CollectionsYaml`,
+  },
   plugins: [
+    "gatsby-plugin-theme-ui",
+    `gatsby-transformer-yaml`,
+    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-simple-analytics",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
+        path: `${__dirname}/content`,
+        name: `articles`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data`,
+        name: `mappings`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/assets`,
         name: `assets`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/posts/`,
-        name: "posts",
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -26,114 +56,47 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1200,
-              linkImagesToOriginal: false,
+              maxWidth: 590,
             },
           },
           {
-            resolve: `gatsby-remark-images-medium-zoom`,
+            resolve: `gatsby-remark-responsive-iframe`,
             options: {
-              margin: 12,
-              scrollOffset: 0,
+              wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          {
-            resolve: `gatsby-remark-vscode`,
-            options: {
-              theme: "One Dark Pro",
-              extensions: ["material-theme"],
-            },
-          },
-          {
-            resolve: `gatsby-remark-autolink-headers`,
-            options: {
-              className: `toc-header`,
-              maintainCase: false,
-              removeAccents: true,
-              elements: [`h1`, `h2`, `h3`, `h4`, `h5`, `h6`],
-            },
-          },
-          `gatsby-remark-emoji`,
+          `gatsby-remark-smartypants`,
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: metaConfig.ga,
-      },
-    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     //trackingId: `ADD YOUR TRACKING ID HERE`,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: metaConfig.title,
-        short_name: metaConfig.title,
+        name: `Help Center`,
+        short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#3F4145`,
+        theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: metaConfig.icon,
-        cache_busting_mode: `name`,
+        icon: `assets/favicon.png`,
       },
     },
-    // `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map((edge) => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
-            },
-            query: `
-              {
-                allMarkdownRemark(
-                  sort: { fields: [frontmatter___date], order: DESC }
-                  filter: { frontmatter: { draft: { eq: false } } },
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: "/rss.xml",
-          },
-        ],
-      },
-    },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
   ],
 }
